@@ -40,7 +40,7 @@ function cargarCiudad(ciudad){
 
         input.value=""
 
-    }
+    
     ).fail(function(){
         alert("City not found.")
 
