@@ -40,7 +40,7 @@ input.addEventListener("keydown", function(e){
 */
 function cargarCiudad(ciudad){
  
-    $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es`, function(data){
+    $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=en`, function(data){
 
         console.log(data)
         container.style.visibility = "visible"
@@ -57,7 +57,7 @@ function cargarCiudad(ciudad){
 
     }
     ).fail(function(){
-        alert("Ciudad no encontrada.")
+        alert("City not found.")
 
         input.value=""
 
@@ -69,7 +69,7 @@ function cargarCiudad(ciudad){
 function filtroCiudad(ciudad){
 
     if(ciudad===""){
-        alert("Debe ingresar el nombre de alguna ciudad, respetando las mayúsculas.")
+        alert("You must enter the name of a city, respecting capital letters".)
 
     }else{
         let arreglo= ciudad.split(" ")
