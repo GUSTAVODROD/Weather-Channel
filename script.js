@@ -22,22 +22,7 @@ button.addEventListener("click",function(){
     filtroCiudad(ciudad)
   
 })
-/* para activar con ENTER
-input.addEventListener("keydown", function(e){
-    
-    let ciudad=input.value
 
-    if(e.keycode==13){
-        
-        filtroCiudad(ciudad)
-
-         
-         
-        s
-    }
-
-})
-*/
 function cargarCiudad(ciudad){
  
     $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es`, function(data){
