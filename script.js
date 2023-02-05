@@ -40,7 +40,7 @@ input.addEventListener("keydown", function(e){
 */
 function cargarCiudad(ciudad){
  
-    $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric`, function(data){
+    $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es`, function(data){
 
         console.log(data)
         container.style.visibility = "visible"
